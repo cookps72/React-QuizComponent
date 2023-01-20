@@ -6,12 +6,14 @@ class Quiz extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {quiz_position : 1};
+        this.state = {quiz_position: 1};
     }
 
 
     render() {
-        return (<div>Quiz</div>);
+        return (<div>
+            <div className="QuizQuestion">{quizData[0].instruction_text}</div>
+        </div>);
 
     }
 }
