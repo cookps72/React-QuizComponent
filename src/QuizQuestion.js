@@ -20,4 +20,4 @@ class QuizQuestion extends React.Component {
     }
 }
 
-export default  QuizQuestion;
+export default QuizQuestion;
