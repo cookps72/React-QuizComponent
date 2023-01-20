@@ -14,11 +14,12 @@ class Quiz extends React.Component {
     showNextQuestion () {
 
         this.state.quiz_position=this.state.quiz_position+1;
+
     }
     render() {
         const isQuizEnd= this.state.quiz_position-1===quizData.quiz_questions.length;
 
-        return (<div> {isQuizEnd?<QuizEnd/>:<QuizQuestion showNextQuestionHandler ={this.showNextQuestion.bind(this)} quiz_question={quizData.quiz_questions[this.state.quiz_position-1]}/>}</div>);
+        return (<div> {isQuizEnd?<QuizEnd/>:<QuizQuestion showNextQuestionHandler={this.showNextQuestion.bind(this)} quiz_question={quizData.quiz_questions[this.state.quiz_position-1]}/>}</div>);
 
     }
 }
